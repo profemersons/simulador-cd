@@ -1,0 +1,215 @@
+/* BASE */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 10px;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #004A8D;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0 0 5px 0;
+  font-size: 1.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* STATUS GRID */
+.status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.status-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  font-size: 0.95em;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BOTÕES */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #004A8D;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #F7941D;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* INPUT */
+input {
+  width: 60px;
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* CARDS INTERNOS */
+.compra-card, .venda-card, .btn-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  background: #f4f6f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.compra-card input, .venda-card input {
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* TRANSPORTE */
+.transporte-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.transporte-btn {
+  flex: 1 1 30%;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #004A8D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.transporte-btn:hover {
+  background: #F7941D;
+}
+
+.transporte-btn.selected {
+  background: #F7941D;
+}
+
+/* TITULOS CARD */
+.card h3 {
+  margin-top: 0;
+  color: #004A8D;
+  font-size: 1.2em;
+}
+
+/* ALERTAS */
+.alerta {
+  color: #F7941D;
+  font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px){
+  .status {
+    grid-template-columns: 1fr;
+  }
+
+  .compra-card, .venda-card, .btn-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transporte-group {
+    flex-direction: column;
+  }
+
+  input {
+    width: 50px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Splash Screen */
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* tela cheia */
+  background: linear-gradient(135deg, #004A8D 0%, #F7941D 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.splash h1 {
+  font-size: 2.5em;
+  margin: 0 0 20px 0;
+}
+
+.splash p {
+  font-size: 1em;
+  margin: 0 0 40px 0;
+  opacity: 0.9;
+}
+
+.splash button {
+  background: white;
+  color: #004A8D;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.splash button:hover {
+  background: #F7941D;
+  color: white;
+}
