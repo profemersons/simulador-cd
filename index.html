@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Centro de Distribuição</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(135deg, #004A8D 0%, #F7941D 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .splash h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+  }
+
+  .splash p {
+    font-size: 1em;
+    margin: 0 0 40px 0;
+    opacity: 0.9;
+  }
+
+  .splash button {
+    background: white;
+    color: #004A8D;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .splash button:hover {
+    background: #F7941D;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="splash">
+  <h1>Simulador de Centro de Distribuição</h1>
+  <p>Feito com carinho e exclusividade para ADM5 🤍</p>
+  <button onclick="iniciarSimulador()">Iniciar Simulador</button>
+</div>
+
+<script>
+  function iniciarSimulador() {
+    // Redireciona para o simulador
+    window.location.href = "simulador.html";
+  }
+</script>
+
+</body>
+</html>
